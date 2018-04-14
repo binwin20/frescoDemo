@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">FrescoDemo</string>
     <string name="go_to_second_activity">Go to Second Activity</string>
+    <string name="clean_fresco_cache">Clean Fresco Cache</string>
 </resources>

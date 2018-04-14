@@ -15,6 +15,6 @@ class SecondActivity: Activity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_second)
         val draweeView: SimpleDraweeView = findViewById(R.id.image_view)
-        draweeView.setImageURI("SimpleDraweeView")
+        draweeView.setImageURI(Constant.URL)
     }
 }

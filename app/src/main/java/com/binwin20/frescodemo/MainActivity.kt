@@ -4,6 +4,7 @@ import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import com.facebook.drawee.backends.pipeline.Fresco
 
 /**
  *
@@ -17,6 +18,10 @@ class MainActivity : Activity() {
         val button: Button = findViewById(R.id.goto_second_button)
         button.setOnClickListener({
             startActivity(Intent(this, SecondActivity::class.java))
+        })
+        val cleanCacheButton: Button = findViewById(R.id.clean_cache_button)
+        cleanCacheButton.setOnClickListener({
+            Fresco.getImagePipeline().clearCaches()
         })
     }
 }
